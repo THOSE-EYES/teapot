@@ -97,7 +97,7 @@ namespace gl {
 		glMatrixMode(GL_PROJECTION);
 		glLoadIdentity();
 
-		//
+		// Set perspective
 		gluPerspective(70, 1.0, 1.0, 30.0);
 
 		// Update matrix of view
@@ -133,7 +133,6 @@ namespace gl {
 					0.0, 0.0, 0.0, 
 					0.0, 1.0, 0.0);
 					
-
 		// Draw every shape, which should be drawn
 		const auto shapes = window->get_shapes();
 		for (const auto& shape : *shapes) {
